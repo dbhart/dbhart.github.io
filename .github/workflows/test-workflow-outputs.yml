@@ -13,11 +13,13 @@ jobs:
     steps:
 
     - name: Output to github output
-      id: get-url
+      id: geturl
       run: |
-        echo "url=https://sandialabs.github.io/sansmic/" >> "$GITHUB_OUTPUT"
+        echo "ourl=https://sandialabs.github.io/sansmic/" >> "$GITHUB_OUTPUT"
+        echo "URL=https://sandialabs.github.io/sansmic/" >> "$GITHUB_ENV"
 
     - name: Output to job summary
       run: |
         echo "### Summary Time!" >> $GITHUB_STEP_SUMMARY
-        echo "The url I got was $url" >> $GITHUB_STEP_SUMMARY
+        echo "The url I got was $URL" >> $GITHUB_STEP_SUMMARY
+        echo 'The url output was" "${{ steps.geturl.outputs.ourl }}" >> $GITHUB_STEP_SUMMARY
