@@ -10,6 +10,10 @@ jobs:
   deploy:
 
     runs-on: ubuntu-latest
+    environment:
+      name: 'Production'
+      # Modify URL to whatever data you want to show, should be a valid URL
+      url: ${{ steps.geturl.outputs.ourl }}
     steps:
 
     - name: Output to github output
