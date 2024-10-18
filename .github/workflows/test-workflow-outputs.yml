@@ -11,11 +11,12 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      url: ${{ steps.deploy.outputs.url }}
+      url: ${{ steps.get-url.outputs.url }}
 
     steps:
 
     - name: Output to github output
+      id: get-url
       run: |
         echo "url=https://sandialabs.github.io/sansmic/" >> "$GITHUB_OUTPUT"
 
