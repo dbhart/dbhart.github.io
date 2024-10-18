@@ -23,3 +23,12 @@ jobs:
         echo "### Summary Time!" >> $GITHUB_STEP_SUMMARY
         echo "The url I got was $URL" >> $GITHUB_STEP_SUMMARY
         echo 'The url output was' "${{ steps.geturl.outputs.ourl }}" >> $GITHUB_STEP_SUMMARY
+
+  warning:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set a warning message
+      id: warnmsg
+      run: | 
+        echo "::warning file=app.js,line=1,col=5,endColumn=7,title=YOUR-TITLE::Missing semicolon"
+
