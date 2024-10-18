@@ -10,9 +10,6 @@ jobs:
   deploy:
 
     runs-on: ubuntu-latest
-    env:
-      url: ${{ steps.get-url.outputs.url }}
-
     steps:
 
     - name: Output to github output
