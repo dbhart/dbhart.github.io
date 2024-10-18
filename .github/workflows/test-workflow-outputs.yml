@@ -17,8 +17,9 @@ jobs:
 
     - name: Output to github output
       run: |
-        echo "{url}={https://sandialabs.github.io/sansmic/}" >> $GITHUB_OUTPUT
+        echo "url=https://sandialabs.github.io/sansmic/" >> "$GITHUB_OUTPUT"
 
     - name: Output to job summary
       run: |
-        echo "### Summary Time!" >> $GITHUB_STEP_SUMMARY 
+        echo "### Summary Time!" >> $GITHUB_STEP_SUMMARY
+        echo "The url I got was $url" >> $GITHUB_STEP_SUMMARY
