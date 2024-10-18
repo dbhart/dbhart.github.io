@@ -1,0 +1,23 @@
+name: Test output creation
+
+on:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Output to github output
+      run: |
+        echo "{url}={https://sandialabs.github.io/sansmic/}" >> $GITHUB_OUTPUT
+
+    - name: Output to job summary
+      run: |
+        echo "### Summary Time!" >> $GITHUB_SUMMARY
+  
