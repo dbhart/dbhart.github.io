@@ -1,9 +1,7 @@
 ---
 # Index
-
 layout: default
 ---
-
 # dbhart.github.io
 
 David Hart
