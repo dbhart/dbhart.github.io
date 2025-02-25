@@ -1,10 +1,10 @@
 ---
 # Index
 
-layout: home
+layout: default
 ---
 
-# Projects and such
+# dbhart.github.io
 
 David Hart
 
