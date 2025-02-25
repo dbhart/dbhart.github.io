@@ -5,7 +5,11 @@ domain: dbhart.github.io
 url: https://dbhart.github.io
 title: dbhart.github.io
 email: dbhart@noreply.users.github.com
-description: >- # this means to ignore newlines until "baseurl:"
-  If I make this json-ld, will that show up in the <head> as well?
 github_username:  dbhart
 theme: null
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true

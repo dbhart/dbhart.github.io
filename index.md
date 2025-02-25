@@ -8,6 +8,6 @@ Welcome to My Home Page
 - Original date - {{ date }}
 - With timeago filter - {{ date | timeago }}
 
-[![](_data/ORCID-iD_icon-vector.svg)
+[![ORCID iD](/assets/img/ORCID-iD_icon-vector.svg)
 https://orcid.org/0000-0002-5824-8987](https://orcid.org/0000-0002-5824-8987)
 
