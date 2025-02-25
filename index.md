@@ -1,15 +1,13 @@
 ---
-# Index
-layout: default
 ---
-# dbhart.github.io
 
-David Hart
+Welcome to My Home Page
 
-<a href=”https://orcid.org/0000-0002-5824-8987” aria-label=”View ORCID record”>
+{% assign date = '2020-04-13T10:20:00Z' %}
 
-<img src=”/ORCID-iD_icon-vector.svg” alt=”ORCID iD”/>
+- Original date - {{ date }}
+- With timeago filter - {{ date | timeago }}
 
-https://orcid.org/0000-0002-5824-8987
+[![ORCID iD](/ORCID-iD_icon-vector.svg) 
+https://orcid.org/0000-0002-5824-8987](https://orcid.org/0000-0002-5824-8987)
 
-</a>
