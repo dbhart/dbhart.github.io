@@ -1,6 +1,8 @@
 # _config.yml
 # Site settings
 
+domain: dbhart.github.io
+url: https://dbhart.github.io
 title: dbhart.github.io
 email: dbhart@noreply.users.github.com
 description: >- # this means to ignore newlines until "baseurl:"
